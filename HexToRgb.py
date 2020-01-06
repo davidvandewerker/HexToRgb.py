@@ -1,26 +1,24 @@
 import argparse
-from argparse import RawTextHelpFormatter
 from colors import rgb, hex
+from argparse import RawTextHelpFormatter
 
 parser = argparse.ArgumentParser(
     prog='HexToRgb.py',
-    description='Convert Hexadecimal values to RGB values',
-    epilog='Related Commands:' + '\n' + 'RgbToHex.py',
+    description='convert hexadecimal values to rgb values',
+    epilog='related programs: RgbToHex.py',
     formatter_class=RawTextHelpFormatter
 )
 
 parser.add_argument(
-    'hex_input',
-    help='Hexadecimal value to be converted to RGB'
+    'hex_color',
+    type=str,
+    help='hexadecimal value to be converted to rgb'
 )
 
 args = parser.parse_args()
-hexString = args.hex_input
 
-hexValue = str(hexString).upper()
+hex_color = args.hex_color.upper()
+rgb_color = tuple(hex(hex_color).rgb)
 
-rgbOutput = tuple(hex(hexString).rgb)
-rgbValue = str(rgbOutput)
-
-print('\n' + 'Hex Value: #' + hexValue)
-print('RGB Value: rgb'+ rgbValue + '\n')
+print('\n' + 'hex value:', '\n #' + hex_color + '\n')
+print('rgb value:', '\n', 'rgb'+ str(rgb_color), '\n')

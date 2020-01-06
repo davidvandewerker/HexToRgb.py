@@ -9,7 +9,7 @@ HexToRgb.py [-h] hex_color
 ```
 
 Example:
-*Convert the hexadecimal value #FFFFFF to rgb format.*
+*convert hex value #FFFFFF to rgb format.*
 ```PowerShell
 PS> HexToRgb.py FFFFFF                                                                  
 hex value:

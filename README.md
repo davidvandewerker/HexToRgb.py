@@ -1,6 +1,6 @@
 # HexToRgb.py
 ## Description
-A simple program for converting hexadecimal color values to rgb color values.
+A simple python program for converting hexadecimal color values to rgb color values.
 
 ## Usage
 Basic Usage:
@@ -8,7 +8,8 @@ Basic Usage:
 HexToRgb.py [-h] hex_color
 ```
 
-Example: convert hexadecimal value #FFFFFF to rgb format.
+Example:
+*Convert the hexadecimal value #FFFFFF to rgb format.*
 ```PowerShell
 PS> HexToRgb.py FFFFFF                                                                  
 hex value:

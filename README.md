@@ -1,4 +1,4 @@
-# HexToRgb.py
+# HexToRgb
 ## Description
 A simple python program for converting hexadecimal color values to rgb color values.
 
@@ -34,3 +34,6 @@ optional arguments:
 
 related programs: RgbToHex.py
 ```
+
+## Dependencies
+HexToRgb is dependent upon the python project <a href="https://pypi.org/project/colors.py/">colors.py</a>, which can be at found https://pypi.org/project/colors.py/. To quickly install using <a href="https://github.com/pypa/pip">pip</a>, run the command `pip install colors.py` from PowerShell or your own preffered shell.
